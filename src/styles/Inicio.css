@@ -1,0 +1,107 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+   header{
+    width: 100%;
+    height: 76px;
+    overflow: hidden;
+    background:  rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px;
+    margin-left: 10px;
+  }
+  .encabezado{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    margin-right: 20px;
+  }
+  header .nombre{
+    color: whitesmoke;
+    font-size: 45px;
+    height: 50%;
+    float: left;
+    margin-left: 30px;
+  }
+  header nav{
+    float: right;
+    line-height: 200px;
+  }
+  header nav a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+  header nav a:hover{
+    background: #f8851d;
+    border-radius: 50px;
+  }
+  nav ul {
+    list-style: none;
+    overflow: hidden; 
+  }
+  nav ul li {
+    float: right;
+    font-size: 16px;
+  }
+  nav ul li a {
+    display: block; 
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+  } 
+  .body2{
+    /* background-image: linear-gradient(180deg, #bce5ff 0, #9db9f2 50%, #7e8fb3 100%); */
+    background-image: radial-gradient(circle at 50% -20.71%, #e6f58f 0, #e9eb7f 10%, #ecdf6e 20%, #efd25d 30%, #f1c44d 40%, #f2b53c 50%, #f3a52d 60%, #f59522 70%, #f8851d 80%, #fa741e 90%, #fc6324 100%);
+  }
+h1{
+  margin-left: 40%;
+  margin-top: 50px;
+  font-size: 60px;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 4.1) 0px 0px 60px;
+}
+  .slider{
+    width: 95%;
+    margin: 30px;
+    overflow: hidden;
+    margin-left: 300px;
+    margin-top: 20px;
+  }
+  .slider ul{
+    display: flex;
+    padding: 0;
+    width: 500%;
+    animation: cambio 20s infinite alternate;
+  }
+  .slider li{
+    width: 100%;
+    list-style: none;
+  }
+.slider img{
+  width: 60%;
+  height: 445px;
+}
+@keyframes cambio{
+  0% {margin-left: 0;}
+  16%{margin-left: 0;}
+
+  21%{margin-left: -100%;}
+  37%{margin-left: -100%;}
+
+  42%{margin-left: -200%;}
+  58%{margin-left: -200%;}
+
+  63%{margin-left: -300%;}
+  79%{margin-left: -300%;}
+
+  84%{margin-left: -400%;}
+  100%{margin-left: -400%;}
+}
